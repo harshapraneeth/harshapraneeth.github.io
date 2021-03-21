@@ -4,7 +4,32 @@
 </head>
 
 <body>
+
+    <div class='header'>
+        <div class='title'>
+            <a href="index.html">Harsha's Log</a>
+        </div>
+        <div id='header-menu'>
+        </div>
+    </div>
+
+    <div class='home-container'>
+        <img class='dp-img' src='media/harsha.jpg'/>
+        <div class='intro-text'>
+                <b style="font-size: 30px;">I'm a Software Developer and a Master's student at CAU, Kiel.</b><br><br>
+                I enjoy taking complex problems and turning them into simple and elegant solutions. I love the logic and structure of coding and always strive to write efficient code, whether it be C++, Java or Python.<br><br>
+                When I'm not coding or studying, you'll find me painting or in the court playing Badminton.
+        </div>
+    </div>
+
+    <img class='home-background' src="media/background.jpg">
+
     <script src='script.js'></script>
+    <script>
+        load_menu(-1);
+        load_list('education-list');
+        expand_list_item('education-list', 0);
+    </script>
 </body>
 
 </html>
