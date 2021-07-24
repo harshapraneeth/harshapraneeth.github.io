@@ -1,35 +1,47 @@
 <html>
+
 <head>
-    <link rel='stylesheet' href='style.css' />
+    <link rel="stylesheet" href="style.css" />
+    <title>Everything Harsha</title>
 </head>
 
 <body>
 
-    <div class='header'>
-        <div class='title'>
-            <a href="index.html">Harsha's Log</a>
+    <img class="hamburger" src="media/hamburger.png" onclick="expand_menu()"/>
+
+    <div class="sidebar">
+
+        <div class="sidebar_title">
+            <span>Sitemap</span>
         </div>
-        <div id='header-menu'>
+
+        <div class="sidebar_menu">
+
+            <a class="sidebar_menu_item sidebar_menu_active" onclick="navigate(this)">Startseite</a>
+            <a class="sidebar_menu_item" onclick="navigate(this)">Education</a>
+            <div class="sidebar_menu_submenu">
+                <span class="sidebar_submenu_title" onclick="navigate(this)">Projects</span>
+                <ul class="sidebar_submenu_items">
+                    <li onclick="navigate(this)">First Project: Jungle book</li>
+                    <li onclick="navigate(this)">Big Project: Life of Pi</li>
+                    <li onclick="navigate(this)">Ultimate Project: Pheneas and Ferb and the wrongly spelled symeetry</li>
+                    <li onclick="navigate(this)">Small Project: League of Legends</li>
+                    <li onclick="navigate(this)">Barely a Project: Inazuma Eleven</li>
+                    <li onclick="navigate(this)">Mini Project: Under Armour</li>
+                    <li onclick="navigate(this)">Fake Project: Indiana Jones</li>
+                </ul>
+            </div>
+            <a class="sidebar_menu_item" onclick="navigate(this)">Achievements</a>
+            <a class="sidebar_menu_item" onclick="navigate(this)">Hobbies</a>
+            <a class="sidebar_menu_item" onclick="navigate(this)">Contact</a>
+
         </div>
+
     </div>
 
-    <div class='home-container'>
-        <img class='dp-img' src='media/harsha.jpg'/>
-        <div class='intro-text'>
-                <b style="font-size: 30px;">I'm a Software Developer and a Master's student at CAU, Kiel.</b><br><br>
-                I enjoy taking complex problems and turning them into simple and elegant solutions. I love the logic and structure of coding and always strive to write efficient code, whether it be C++, Java or Python.<br><br>
-                When I'm not coding or studying, you'll find me painting or in the court playing Badminton.
-        </div>
-    </div>
+    <iframe id="content_source" src="Startseite.html"></iframe>
 
-    <img class='home-background' src="media/background.jpg">
-
-    <script src='script.js'></script>
-    <script>
-        load_menu(-1);
-        load_list('education-list');
-        expand_list_item('education-list', 0);
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
