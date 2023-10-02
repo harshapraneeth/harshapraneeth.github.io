@@ -1,2 +1,4 @@
 ### Coding Gismos
-- Anamorphic art
+
+- Interpreting Inkblots - QR Code Generation Using Python
+
